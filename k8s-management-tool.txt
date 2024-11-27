@@ -1,0 +1,18 @@
+k8s-management-tool/
+├── cmd/
+│   └── main.go          # Entry point of the application
+├── config/
+│   └── config.go        # Configuration and environment variables
+├── internal/
+│   ├── handlers/        # API handlers
+│   │   ├── auth.go      # Auth-related routes
+│   │   ├── cluster.go   # Cluster-related routes
+│   │   └── user.go      # User-related routes
+│   ├── middleware/      # Middleware for authentication
+│   │   └── auth.go      # JWT verification
+│   └── services/        # Business logic
+│       └── auth.go      # Auth service
+├── pkg/
+│   └── utils.go         # Utility functions
+├── go.mod               # Go module file
+└── go.sum               # Dependencies lock file
